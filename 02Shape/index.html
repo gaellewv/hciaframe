@@ -8,14 +8,33 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
+    <a-scene background="color: #55555">
+      <a-assets>
+      </a-assets>
       <a-box id="myBox"
         width="3"
         height="2"
         depth="1"
         color="#BBAA33" 
+        position="0 1 -4"
+        rotation="0 60 0"
         shadow>
       </a-box>
+        <a-plane src="#ground" position="0 0 0" height="10" width="10" rotation="-90 0 0" color="#30B386"></a-plane>
+        <a-cone 
+        width="3"
+        height="2"
+        depth="1"
+        color="#FF0000" 
+        position="1 3 -4"
+        rotation="0 10 45"></a-cone>
+        <a-dodecahedron 
+        width="1"
+        height="1"
+        depth="1"
+        color="#308BB3" 
+        position="-2 3 -4"
+        rotation="0 10 45"></a-dodecahedron>
     </a-scene>
   </body>
 </html>
